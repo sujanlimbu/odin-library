@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.form-popup {
+    display: none;
+    border: 2px solid #666;
+    background: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+}
+
+.form-popup .close-form {
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="radio"],
+.form-container input[type="submit"] {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#no-of-page {
+    display: flow-root;
+    flex-direction: row;
+}
+
+#no-of-page input[type='number'] {
+    width: 30%;
+    align-items: center;
+}
+
+.form-container label {
+    margin: 5px 0;
+}
+
+table {
+    width: 100% ;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: .5px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #c5c5c5;
+    text-align: left;
+}
+
+.empty-row {
+    text-align: center;
+    font-style: italic;
+}
+
+.btn {
+    margin-bottom: 20px;
+    background-color: #c2c2c2;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    padding: 10px 20px;
+}
+
+.btn:hover {
+    background-color: #cdcccc;
+}
+
+.btn-remove {
+    background-color: #f35a4f;
+}
+
+.btn-remove:hover {
+    background-color: #f6766d;
+}
+
+.btn-change-status:hover {
+    background-color: #cdcccc;
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
